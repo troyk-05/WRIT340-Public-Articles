@@ -1,40 +1,38 @@
 ---
-layout: home
+layout: default
 title: Purple & Gold Report
 ---
 
-# Purple & Gold Report
+<div class="hero">
+  <h1>Purple & Gold Report</h1>
+  <p>Lakers analysis, playoff coverage, and season updates.</p>
+</div>
 
-Your source for Lakers analysis, playoff coverage, and season updates.
+<div class="articles-grid">
 
----
+  <a class="article-card" href="./2026/03/18/overtime-win.html">
+    <h2>March 18, 2026</h2>
+    <p>Lakers Make Statement in Wins Against Nuggets, Rockets</p>
+  </a>
 
-## Featured Articles
+  <a class="article-card" href="./2026/03/27/road-trip.html">
+    <h2>March 27, 2026</h2>
+    <p>Dončić Drops 60, Lakers Wrap Up Dominant Road Trip</p>
+  </a>
 
-### [March 18, 2026 — Lakers Beat Nuggets in Overtime Thriller](./2026/03/18/overtime-win.html)
+  <a class="article-card" href="./2026/04/04/injuries.html">
+    <h2>April 4, 2026</h2>
+    <p>Crushing Loss, Untimely Injuries Derail Lakers’ Momentum</p>
+  </a>
 
-A huge overtime win against Denver strengthens the Lakers’ playoff positioning.
+  <a class="article-card" href="./2026/04/13/playoffs.html">
+    <h2>April 13, 2026</h2>
+    <p>Lakers Finish Season 53–29, Look Towards Playoffs Without Dončić and Reaves</p>
+  </a>
 
----
+  <a class="article-card" href="./2026/04/25/playoff-run.html">
+    <h2>April 25, 2026</h2>
+    <p>LeBron, Lakers Stun Rockets to Take 3–0 Series Lead</p>
+  </a>
 
-### [March 27, 2026 — Luka Dominates the Road Trip](./2026/03/27/road-trip.html)
-
-Luka Dončić explodes for 60 points as the Lakers continue their winning streak.
-
----
-
-### [April 4, 2026 — Injuries Change the Season](./2026/04/04/injuries.html)
-
-The Lakers suffer devastating injuries to Luka Dončić and Austin Reaves.
-
----
-
-### [April 13, 2026 — Lakers Prepare for the Playoffs](./2026/04/13/playoffs.html)
-
-Can LeBron carry the Lakers through the postseason without their top scorers?
-
----
-
-### [April 25, 2026 — Lakers Shock the Rockets](./2026/04/25/playoff-run.html)
-
-The Lakers take a stunning 3-0 series lead behind LeBron James.
+</div>
