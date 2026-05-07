@@ -3,40 +3,125 @@
 
 @import "minima";
 
+/* Global */
+
 body {
-  background-color: #111111;
+  background-color: #0f0f12;
   color: #f5f5f5;
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header */
+
 .site-header {
-  background: #552583;
+  background: linear-gradient(90deg, #552583, #2b1747);
   border-top: 5px solid #FDB927;
+  border-bottom: none;
 }
 
 .site-title,
 .site-title:visited {
   color: #FDB927;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .site-nav .page-link {
   color: white;
+  margin-left: 20px;
 }
+
+/* Wrapper */
+
+.wrapper {
+  max-width: 1100px;
+}
+
+/* Hero Section */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  color: #FDB927;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #cccccc;
+}
+
+/* Article Grid */
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 20px 80px;
+}
+
+/* Article Cards */
+
+.article-card {
+  background: #1b1b22;
+  border: 2px solid transparent;
+  border-radius: 18px;
+  padding: 30px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.article-card:hover {
+  transform: translateY(-8px);
+  border-color: #FDB927;
+  box-shadow: 0 12px 30px rgba(253,185,39,0.2);
+}
+
+.article-card h2 {
+  color: #FDB927;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.article-card p {
+  color: #e0e0e0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Blog Posts */
+
+.post-title {
+  color: #FDB927;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.post-content {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #f2f2f2;
+}
+
+/* Links */
 
 a {
   color: #FDB927;
 }
 
-.post-title {
-  color: #FDB927;
-}
+/* Footer */
 
-.wrapper {
-  max-width: 900px;
-}
-
-.post-content {
-  font-size: 18px;
-  line-height: 1.8;
+.site-footer {
+  border-top: 1px solid #333;
+  background: #111;
+  color: #999;
 }
