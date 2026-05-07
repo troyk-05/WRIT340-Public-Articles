@@ -4,35 +4,36 @@ title: Purple & Gold Report
 ---
 
 <div class="hero">
-  <h1>Purple & Gold Report</h1>
-  <p>Lakers analysis, playoff coverage, and season updates.</p>
+  <h1>Purple &amp; Gold<br>Report</h1>
+  <p>Independent Lakers coverage — analysis, playoff breakdowns, and season updates.</p>
 </div>
 
+<div class="section-label">Latest Articles</div>
+
 <div class="articles-grid">
-
   <a class="article-card" href="./2026/03/18/overtime-win.html">
-    <h2>March 18, 2026</h2>
-    <p>Lakers Make Statement in Wins Against Nuggets, Rockets</p>
+    <div class="card-date">Mar 18, 2026</div>
+    <h2>Statement Wins Against Nuggets &amp; Rockets</h2>
+    <span class="card-arrow">→</span>
   </a>
-
   <a class="article-card" href="./2026/03/27/road-trip.html">
-    <h2>March 27, 2026</h2>
-    <p>Dončić Drops 60, Lakers Wrap Up Dominant Road Trip</p>
+    <div class="card-date">Mar 27, 2026</div>
+    <h2>Dončić Drops 60, Lakers Wrap Dominant Road Trip</h2>
+    <span class="card-arrow">→</span>
   </a>
-
   <a class="article-card" href="./2026/04/04/injuries.html">
-    <h2>April 4, 2026</h2>
-    <p>Crushing Loss, Untimely Injuries Derail Lakers’ Momentum</p>
+    <div class="card-date">Apr 4, 2026</div>
+    <h2>Crushing Loss &amp; Untimely Injuries Derail Momentum</h2>
+    <span class="card-arrow">→</span>
   </a>
-
   <a class="article-card" href="./2026/04/13/playoffs.html">
-    <h2>April 13, 2026</h2>
-    <p>Lakers Finish Season 53–29, Look Towards Playoffs Without Dončić and Reaves</p>
+    <div class="card-date">Apr 13, 2026</div>
+    <h2>Lakers Finish 53–29, Eye Playoffs Without Dončić</h2>
+    <span class="card-arrow">→</span>
   </a>
-
   <a class="article-card" href="./2026/04/25/playoff-run.html">
-    <h2>April 25, 2026</h2>
-    <p>LeBron, Lakers Stun Rockets to Take 3–0 Series Lead</p>
+    <div class="card-date">Apr 25, 2026</div>
+    <h2>LeBron &amp; Lakers Stun Rockets, Take 3–0 Lead</h2>
+    <span class="card-arrow">→</span>
   </a>
-
 </div>
