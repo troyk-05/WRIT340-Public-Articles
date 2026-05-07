@@ -1,127 +1,208 @@
 ---
 ---
-
 @import "minima";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap');
 
-/* Global */
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
-  background-color: #0f0f12;
-  color: #f5f5f5;
-  font-family: "Helvetica Neue", sans-serif;
+  background: #0a0a0f;
+  color: #f0f0f0;
+  font-family: 'Barlow', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header */
-
+/* ── Header ── */
 .site-header {
-  background: linear-gradient(90deg, #552583, #2b1747);
-  border-top: 5px solid #FDB927;
-  border-bottom: none;
+  background: #0d0d14;
+  border-top: none;
+  border-bottom: 3px solid #FDB927;
+  padding: 0 32px;
+  height: 64px;
+  display: flex;
+  align-items: center;
 }
 
 .site-title,
 .site-title:visited {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: #FDB927;
-  font-size: 30px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  line-height: 64px;
 }
 
 .site-nav .page-link {
-  color: white;
-  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #888;
+  margin-left: 24px;
+  transition: color 0.2s;
+  &:hover { color: #FDB927; }
 }
 
-/* Wrapper */
-
+/* ── Wrapper ── */
 .wrapper {
   max-width: 1100px;
+  padding: 0;
 }
 
-/* Hero Section */
-
+/* ── Hero ── */
 .hero {
-  text-align: center;
-  padding: 100px 20px 60px;
+  position: relative;
+  padding: 72px 32px 52px;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 80% 50%, rgba(85,37,131,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(253,185,39,0.07) 0%, transparent 60%);
+    pointer-events: none;
+  }
 }
 
 .hero h1 {
-  font-size: 64px;
-  color: #FDB927;
-  margin-bottom: 10px;
-  font-weight: 800;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: -1px;
+  margin: 0 0 16px;
 }
 
 .hero p {
-  font-size: 22px;
-  color: #cccccc;
+  font-size: 16px;
+  color: #888;
+  margin: 0;
+  max-width: 420px;
 }
 
-/* Article Grid */
+/* ── Section label ── */
+.section-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #555;
+  padding: 32px 32px 12px;
+}
 
+/* ── Article Grid ── */
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 40px 20px 80px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: #1a1a22;
+  border-top: 1px solid #1a1a22;
+  border-bottom: 1px solid #1a1a22;
+  padding: 0;
 }
 
-/* Article Cards */
-
+/* ── Article Cards ── */
 .article-card {
-  background: #1b1b22;
-  border: 2px solid transparent;
-  border-radius: 18px;
-  padding: 30px;
+  background: #0d0d14;
+  padding: 24px 28px;
   text-decoration: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: #FDB927;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover {
+    background: #111118;
+    &::after { transform: scaleX(1); }
+    .card-arrow { color: #FDB927; transform: translateX(4px); }
+  }
 }
 
-.article-card:hover {
-  transform: translateY(-8px);
-  border-color: #FDB927;
-  box-shadow: 0 12px 30px rgba(253,185,39,0.2);
+.article-card .card-date {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FDB927;
+  margin-bottom: 10px;
 }
 
 .article-card h2 {
-  color: #FDB927;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.article-card p {
-  color: #e0e0e0;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* Blog Posts */
-
-.post-title {
-  color: #FDB927;
-  font-size: 48px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 21px;
   font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #f0f0f0;
+  margin: 0 0 10px;
 }
+
+.card-arrow {
+  font-size: 18px;
+  color: #333;
+  display: inline-block;
+  transition: color 0.2s, transform 0.2s;
+}
+
+/* ── Posts ── */
+.post-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.post-meta { color: #FDB927; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
 
 .post-content {
-  font-size: 20px;
-  line-height: 1.9;
-  color: #f2f2f2;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #d8d8d8;
+  max-width: 680px;
+  padding: 0 32px;
+
+  h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FDB927;
+    margin: 2rem 0 0.5rem;
+  }
 }
 
-/* Links */
+/* ── Links ── */
+a { color: #FDB927; }
 
-a {
-  color: #FDB927;
-}
-
-/* Footer */
-
+/* ── Footer ── */
 .site-footer {
-  border-top: 1px solid #333;
-  background: #111;
-  color: #999;
+  border-top: 1px solid #1a1a22;
+  background: #0a0a0f;
+  color: #444;
+  font-size: 13px;
+  padding: 24px 32px;
 }
