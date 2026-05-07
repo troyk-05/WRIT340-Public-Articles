@@ -175,6 +175,19 @@ body {
 }
 
 /* ── Posts ── */
+/* ── Post Page ── */
+.post-wrap {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1a1a22;
+}
+
 .post-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 52px;
@@ -182,17 +195,23 @@ body {
   text-transform: uppercase;
   color: #fff;
   line-height: 1;
-  margin-bottom: 8px;
+  margin: 8px 0 0;
+  letter-spacing: -0.5px;
 }
 
-.post-meta { color: #FDB927; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+.post-meta {
+  color: #FDB927;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
 .post-content {
   font-size: 18px;
   line-height: 1.85;
   color: #d8d8d8;
-  max-width: 680px;
-  padding: 0 32px;
 
   h2 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -200,8 +219,18 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     color: #FDB927;
-    margin: 2rem 0 0.5rem;
+    margin: 2.5rem 0 0.5rem;
   }
+
+  a {
+    color: #FDB927;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(253,185,39,0.4);
+    &:hover { text-decoration-color: #FDB927; }
+  }
+
+  p { margin: 0 0 1.4rem; }
 }
 
 /* ── Links ── */
