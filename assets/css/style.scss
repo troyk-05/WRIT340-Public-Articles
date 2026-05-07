@@ -233,6 +233,11 @@ body {
   p { margin: 0 0 1.4rem; }
 }
 
+.page-content {
+  display: flex;
+  justify-content: center;
+}
+
 /* ── Links ── */
 a { color: #FDB927; }
 
