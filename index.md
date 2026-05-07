@@ -5,7 +5,7 @@ title: Purple & Gold Report
 
 <div class="hero">
   <h1>Purple &amp; Gold<br>Report</h1>
-  <p>Independent Lakers coverage — analysis, playoff breakdowns, and season updates.</p>
+  <p>Lakers news, analysis, and breakdowns.</p>
 </div>
 
 <div class="section-label">Latest Articles</div>
