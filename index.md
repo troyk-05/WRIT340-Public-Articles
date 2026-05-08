@@ -3,7 +3,7 @@ layout: default
 title: Purple & Gold Report
 ---
 
-<div class="hero">
+<div class="hero" style="background-image: url('{{ page.image }}');">
   <h1>Purple &amp; Gold<br>Report</h1>
   <p>Lakers news, analysis, and breakdowns.</p>
 </div>
